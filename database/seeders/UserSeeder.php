@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
             ]
         );
 
-        // Buat atau update akun untuk setiap siswaa
+        // Buat atau update akun untuk setiap siswa 12git 
         Siswa::all()->each(function (Siswa $siswa) {
             User::updateOrCreate(
                 ['siswa_id' => $siswa->id],
